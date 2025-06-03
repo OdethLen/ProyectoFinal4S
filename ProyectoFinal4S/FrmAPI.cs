@@ -114,7 +114,7 @@ namespace ProyectoFinal4S
 
         private void cbMonth_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Opcional: lógica si necesitas algo al cambiar de mes
+           
         }
     }
 }

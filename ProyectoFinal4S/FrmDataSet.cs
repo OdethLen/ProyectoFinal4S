@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal4S
 {
-    public partial class Form2 : Form
+    public partial class FrmDataSet : Form
     {
-        public Form2()
+        public FrmDataSet()
         {
             InitializeComponent();
         }

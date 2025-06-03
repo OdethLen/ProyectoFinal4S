@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinal4S
 {
-    partial class Form3
+    partial class FrmMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             btnAPI = new Button();
             btnDataSet = new Button();
             SuspendLayout();

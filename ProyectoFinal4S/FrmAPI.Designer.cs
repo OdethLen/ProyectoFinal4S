@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinal4S
 {
-    partial class Form1
+    partial class FrmAPI
     {
         /// <summary>
         ///  Required designer variable.

@@ -2,13 +2,13 @@ using System.Text.Json;
 
 namespace ProyectoFinal4S
 {
-    public partial class Form1 : Form
+    public partial class FrmAPI : Form
     {
         private const string api = "https://api.nasa.gov/planetary/apod";
         private const string key = "dlI71b7WG1efSkePYdr6zw61QSrjIMqqDQDn7GTQ";
         private readonly HttpClient _httpClient = new();
 
-        public Form1()
+        public FrmAPI()
         {
             InitializeComponent();
             cbMonth.Items.AddRange(new string[]

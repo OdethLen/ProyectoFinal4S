@@ -10,23 +10,23 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal4S
 {
-    public partial class Form3 : Form
+    public partial class FrmMenu : Form
     {
-        public Form3()
+        public FrmMenu()
         {
             InitializeComponent();
         }
 
         private void btnAPI_Click(object sender, EventArgs e)
         {
-            Form form = new Form1();
+            Form form = new FrmAPI();
             form.Show();
             this.Hide();
         }
 
         private void btnDataSet_Click(object sender, EventArgs e)
         {
-            Form form = new Form2();
+            Form form = new FrmDataSet();
             form.Show();
             this.Hide();
         }

@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinal4S
 {
-    partial class Form2
+    partial class FrmDataSet
     {
         /// <summary>
         /// Required designer variable.

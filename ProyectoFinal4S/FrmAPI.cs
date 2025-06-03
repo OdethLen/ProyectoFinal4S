@@ -13,8 +13,8 @@ namespace ProyectoFinal4S
             InitializeComponent();
             cbMonth.Items.AddRange(new string[]
             {
-                "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
-                "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+                "January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
             });
             cbMonth.SelectedIndex = 0;
 

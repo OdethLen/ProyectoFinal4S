@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             dgvData = new DataGridView();
             btnSearch = new Button();
             cbMonth = new ComboBox();
@@ -37,20 +38,30 @@
             // 
             // dgvData
             // 
-            dgvData.BackgroundColor = Color.MidnightBlue;
+            dgvData.BackgroundColor = SystemColors.ControlLight;
             dgvData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvData.Location = new Point(200, 70);
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Window;
+            dataGridViewCellStyle4.Font = new Font("Yu Gothic UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = Color.LightSteelBlue;
+            dataGridViewCellStyle4.SelectionForeColor = Color.FromArgb(0, 0, 64);
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
+            dgvData.DefaultCellStyle = dataGridViewCellStyle4;
+            dgvData.Location = new Point(160, 171);
             dgvData.Name = "dgvData";
             dgvData.ReadOnly = true;
+            dgvData.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvData.Size = new Size(910, 408);
             dgvData.TabIndex = 0;
             dgvData.CellContentClick += dgvData_CellContentClick;
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(498, 508);
+            btnSearch.Font = new Font("Yu Gothic UI", 12F);
+            btnSearch.Location = new Point(306, 113);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(105, 36);
+            btnSearch.Size = new Size(105, 37);
             btnSearch.TabIndex = 1;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = true;
@@ -58,10 +69,11 @@
             // 
             // cbMonth
             // 
+            cbMonth.Font = new Font("Yu Gothic UI", 12F);
             cbMonth.FormattingEnabled = true;
-            cbMonth.Location = new Point(44, 53);
+            cbMonth.Location = new Point(160, 118);
             cbMonth.Name = "cbMonth";
-            cbMonth.Size = new Size(121, 23);
+            cbMonth.Size = new Size(121, 29);
             cbMonth.TabIndex = 2;
             cbMonth.SelectedIndexChanged += cbMonth_SelectedIndexChanged;
             // 
@@ -69,23 +81,25 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Yu Gothic UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(498, 24);
+            label1.Location = new Point(515, 48);
             label1.Name = "label1";
             label1.Size = new Size(208, 32);
             label1.TabIndex = 3;
             label1.Text = "Picture of the day";
             // 
-            // Form1
+            // FrmAPI
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1212, 659);
+            BackColor = Color.LightSteelBlue;
+            ClientSize = new Size(1212, 680);
             Controls.Add(label1);
             Controls.Add(cbMonth);
             Controls.Add(btnSearch);
             Controls.Add(dgvData);
-            Name = "Form1";
+            Name = "FrmAPI";
             Text = "Form1";
+            TransparencyKey = SystemColors.ScrollBar;
             ((System.ComponentModel.ISupportInitialize)dgvData).EndInit();
             ResumeLayout(false);
             PerformLayout();

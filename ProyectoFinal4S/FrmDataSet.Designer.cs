@@ -43,22 +43,23 @@
             // 
             // btnOpen
             // 
+            btnOpen.Font = new Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnOpen.Location = new Point(340, 365);
             btnOpen.Name = "btnOpen";
-            btnOpen.Size = new Size(99, 33);
+            btnOpen.Size = new Size(102, 36);
             btnOpen.TabIndex = 1;
             btnOpen.Text = "Open";
             btnOpen.UseVisualStyleBackColor = true;
             btnOpen.Click += btnOpen_Click;
             // 
-            // Form2
+            // FrmDataSet
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(866, 456);
             Controls.Add(btnOpen);
             Controls.Add(dgvData);
-            Name = "Form2";
+            Name = "FrmDataSet";
             Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)dgvData).EndInit();
             ResumeLayout(false);
